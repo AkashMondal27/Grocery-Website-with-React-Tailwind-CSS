@@ -6,7 +6,7 @@ import { IoSearch } from "react-icons/io5";
 
 const Navbar = () => {
     return (
-        <header className='bg-wh'>
+        <header className='bg-wh fixed top-0 right-0 left-0'>
             <nav className='max-w-[1250px] mx-auto px-10 h-[14vh] flex justify-between items-center   '>
 
                 <a href='# ' className='text-3xl font-bold'>
@@ -38,7 +38,7 @@ const Navbar = () => {
                         <button className="bg-gradient-to-br from-orange-400 to-orange-600 
                                             text-white w-10 h-10 flex justify-center items-center 
                                             rounded-full text-xl shadow-md hover:shadow-lg 
-                                            hover:scale-105 transition duration-300">
+                                            hover:scale-105 transition duration-300 cursor-pointer">
                             <IoSearch />
                         </button>
                     </div>
