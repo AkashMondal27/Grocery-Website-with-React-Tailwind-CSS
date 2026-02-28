@@ -23,6 +23,12 @@ const Navbar = () => {
                     <a href='#' className='font-semibold tracking-wider text-orange-500  text-zinc-800  hover:text-orange-500'> Contact</a>
                 </li>
             </ul>
+
+            {/* Nav search bar */}
+            <div>
+                
+            </div>
+
         </nav>
     </header>
   )
