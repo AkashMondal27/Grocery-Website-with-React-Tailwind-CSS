@@ -16,7 +16,7 @@ const Navbar = () => {
         setShowMenu(!showMenu);
     }
     return (
-        <header className='bg-wh fixed top-0 right-0 left-0'>
+        <header className='bg-white fixed top-0 right-0 left-0'>
             <nav className='max-w-[1250px] mx-auto px-10 md:h-[14vh] h-[12vh] flex justify-between items-center   '>
 
                 <a href='# ' className='text-3xl font-bold'>
