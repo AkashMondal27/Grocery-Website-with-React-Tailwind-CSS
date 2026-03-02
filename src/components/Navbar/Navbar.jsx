@@ -11,12 +11,13 @@ const Navbar = () => {
 
     // Write the menu click event Logic
     const[showMenu, setShowMenu]=useState(false);
+    const
 
     const  toggleMenu =() =>{
         setShowMenu(!showMenu);
     }
     return (
-        <header className='bg-white fixed top-0 right-0 left-0'>
+        <header className='bg-white fixed top-0 right-0 left-0 z-50 '>
             <nav className='max-w-[1250px] mx-auto px-10 md:h-[14vh] h-[12vh] flex justify-between items-center   '>
 
                 <a href='# ' className='text-3xl font-bold'>
@@ -70,7 +71,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu */}
-                <ul className= {`flex flex-col gap-y-10 bg-orange-500/30 backdrop-blur-xl rounded-xl p-10 items-center gap-x-15 md:hidden absolute top-30 -right-full transform translate-x-1/2  transition-all duration-500 ${showMenu ? 'right-1/2' :"" }`}>
+                <ul className= {`flex flex-col gap-y-10 bg-orange-500/30 backdrop-blur-xl shadow-2xl rounded-xl p-10 items-center gap-x-15 md:hidden absolute top-30 -right-full transform translate-x-1/2  transition-all duration-500 ${showMenu ? 'right-1/2' :"" }`}>
                     <li>
                         <a href='#' className='font-semibold  tracking-wider text-orange-500'> Home</a>
                     </li>
