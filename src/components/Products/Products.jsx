@@ -6,6 +6,7 @@ const Products = () => {
     <section>
         <div className='max-w-[1250px]  mx-auto px-10 p-20'>
             <Heading highlight ="Our" heading="Products"/>
+            
 
         </div>
     </section>
