@@ -10,8 +10,8 @@ const Category = () => {
 
   const renderCard = category.map((card=>{
     return(
-      // <div className='flex-1 basis-[300px]'>
-      <div className='w-full'>
+ 
+      <div className='w-full'  key={card.id}> 
 
         <div className=' w-full min-h-[30vh] relative  -mb-10'>
           <img src= {card.image} className='absolute bottom-0' />
@@ -33,7 +33,7 @@ const Category = () => {
         <Heading highlight=" Product" heading=" Catagory" />
 
          
-        {/* <div className='flex gap-10 md:mt-7   flex-wrap'> */}
+        
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10'>
            {renderCard}
         </div>
