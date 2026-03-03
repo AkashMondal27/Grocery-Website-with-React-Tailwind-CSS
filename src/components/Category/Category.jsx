@@ -10,16 +10,17 @@ const Category = () => {
 
   const renderCard = category.map((card=>{
     return(
-      <div className='flex-1 basis-[300px]'>
+      // <div className='flex-1 basis-[300px]'>
+      <div className='w-full'>
 
         <div className=' w-full min-h-[30vh] relative  -mb-10'>
           <img src= {card.image} className='absolute bottom-0' />
         </div>
 
 
-        <div className='bg-red-100 pt-17 p-8 rounded-xl'>
-          <h3 className='text-zinc-800 text-3xl font-bold'>{card.title}</h3>
-          <p className='text-zinc-600 mt-3 mb-9'> {card.description}</p>
+        <div className='bg-red-100 pt-10 p-5 rounded-xl'>
+          <h3 className='text-zinc-800 text-2xl font-bold'>{card.title}</h3>
+          <p className='text-zinc-600 mt-2 mb-4'> {card.description}</p>
           <Button content= "See All" />
         </div>
       </div>
@@ -32,7 +33,8 @@ const Category = () => {
         <Heading highlight=" Product" heading=" Catagory" />
 
          
-        <div className='flex gap-10 md:mt-15  flex-wrap'>
+        {/* <div className='flex gap-10 md:mt-7   flex-wrap'> */}
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10'>
            {renderCard}
         </div>
       </div>
