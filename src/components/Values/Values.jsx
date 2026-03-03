@@ -8,7 +8,7 @@ const Values = () => {
 
   const leftValues = value.slice(0, 2).map(item => {
     return (
-      <div className=' flex flex-row-reverse '>
+      <div className=' group flex md:flex-row-reverse  items-center gap-7 cursor-pointer'>
         <div>
           <span className="flex justify-center items-center
                  text-3xl text-white
@@ -17,18 +17,17 @@ const Values = () => {
                  shadow-lg shadow-orange-500/40
                  hover:scale-110 hover:shadow-orange-600/60
                  transition-all duration-300">
-          {/* <span className= ' flex justify-center items-center text-3xl text-white bg-gradient-to-b from-orange-400 to-orange-500 w-15 h-15 rounded-full'> */}
             {item.icon}
           </span>
         </div>
 
-        <div className='text-right'>
+        <div className='md:text-right'>
 
-          <h4 className=' text-zinc-800 text-3xl font-bold' >
+          <h4 className=' text-zinc-800 text-3xl font-bold transition-all duration-300 group-hover:text-orange-600' >
             {item.title}
           </h4>
 
-          <p className='text-zinc-600'> 
+          <p className='text-zinc-600 mt-2 transition-all duration-300 group-hover:text-orange-500'> 
             {item.para}
             </p>
         </div>
@@ -39,7 +38,8 @@ const Values = () => {
 
   const rightValues = value.slice(2).map(item => {
     return (
-      <div className=' flex flex-row-reverse '>
+      
+      <div className='group flex  items-center gap-7 cursor-pointer'>
         <div>
           <span className="flex justify-center items-center
                  text-3xl text-white
@@ -48,18 +48,16 @@ const Values = () => {
                  shadow-lg shadow-orange-500/40
                  hover:scale-110 hover:shadow-orange-600/60
                  transition-all duration-300">
-          {/* <span className= ' flex justify-center items-center text-3xl text-white bg-gradient-to-b from-orange-400 to-orange-500 w-15 h-15 rounded-full'> */}
             {item.icon}
           </span>
         </div>
 
-        <div className='text-right'>
-
-          <h4 className=' text-zinc-800 text-3xl font-bold' >
+        <div >
+          <h4 className='text-zinc-800 text-3xl font-bold transition-all duration-300 group-hover:text-orange-600'>
             {item.title}
           </h4>
 
-          <p className='text-zinc-600'> 
+          <p className='text-zinc-600 mt-2 transition-all duration-300 group-hover:text-orange-500'>
             {item.para}
             </p>
         </div>
@@ -73,19 +71,19 @@ const Values = () => {
       <div className=' max-w-[1250px] mx-auto px-10 py-20'>
         <Heading highlight="Our" heading="Values" />
 
-        <div className=' flex'>
+        <div className=' flex md:gap-5 gap-15 md:flex-row flex-col '>
 
           {/* left values  */}
-          <div  >
+          <div className='md:min-h-100 gap-15 flex flex-col  justify-between '>
             {leftValues}
           </div>
 
-          <div className='w-1/2'>
+          <div className='md:flex w-1/2 hidden'>
             <img src={Basket} />
           </div>
 
           {/* Right values */}
-          <div>
+          <div className='md:min-h-100  gap-15 flex flex-col justify-between'>
             {rightValues}
           </div>
         </div >
@@ -102,28 +100,28 @@ const value = [
   {
     id: 1,
     title: "Trust",
-    para: "It is a long established fact that a reader will be distracted by the readable.",
+    para: "Your trust matters to us. That’s why we ensure every product meets the highest standards of quality and reliability.",
     icon: <FaHeart />
   },
 
   {
     id: 2,
     title: "Always Fresh",
-    para: "It is a long established fact that a reader will be distracted by the readable.",
+    para: "Enjoy farm-fresh produce delivered daily, carefully selected to guarantee taste, nutrition, and freshness.",
     icon: <FaLeaf />
   },
 
   {
     id: 3,
     title: "Food Safety",
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    para: "From sourcing to packaging, we maintain rigorous food safety practices to protect your health and well-being.",
     icon: <FaShieldAlt />
   },
 
   {
     id: 4,
     title: "100% Organic",
-    para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    para: "We are committed to offering certified organic options that support a healthier lifestyle and a sustainable future.",
     icon: <FaSeedling />
   }
 ]
