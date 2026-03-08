@@ -8,7 +8,7 @@ const Values = () => {
 
   const leftValues = value.slice(0, 2).map(item => {
     return (
-      <div className=' group flex md:flex-row-reverse  items-center gap-7 cursor-pointer'>
+      <div key={item.id} className=' group flex md:flex-row-reverse  items-center gap-7 cursor-pointer'>
         <div>
           <span className="flex justify-center items-center
                  text-3xl text-white
@@ -39,7 +39,7 @@ const Values = () => {
   const rightValues = value.slice(2).map(item => {
     return (
       
-      <div className='group flex  items-center gap-7 cursor-pointer'>
+      <div key={item.id} className='group flex  items-center gap-7 cursor-pointer'>
         <div>
           <span className="flex justify-center items-center
                  text-3xl text-white
