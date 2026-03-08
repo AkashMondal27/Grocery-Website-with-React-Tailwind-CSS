@@ -1,28 +1,28 @@
-import Butter from '../../assets/butter.png'
-import Strawberry from '../../assets/strawberry.png'
-import Eggs from '../../assets/eggs.png'
-import Cabbage from '../../assets/cabbage.png'
-import Eggplant from '../../assets/eggplant.png'
-import Shrimp from '../../assets/shrimp.png'
-import Kiwi from '../../assets/kiwi.png'
-import Capsicum from '../../assets/capsicum.png'
-import Broccoli from '../../assets/broccoli.png'
-import Yogurt from '../../assets/yogurt.png'
-import Beef from '../../assets/beef.png'
-import ChickenBreast from '../../assets/chicken-breast.png'
-import Kale from '../../assets/kale.png'
-import Cheese from '../../assets/cheese.png'
-import CondensedMilk from '../../assets/condensed-milk.png'
-import Salmon from '../../assets/salmon.png'
-import Banana from '../../assets/banana.png'
-import Milk from '../../assets/milk.png'
-import Pineapple from '../../assets/pineapple.png'
-import Tofu from '../../assets/tofu.png'
-import Tilapia from '../../assets/tilapia.png'
-import SliceCheese from '../../assets/slice-cheese.png'
-import RicottaCheese from '../../assets/ricotta-cheese.png'
-import Grapes from '../../assets/grapes.png'
-import Lettuce from '../../assets/lettuce.png'
+import Butter from '../../assets/pictures/butter.png'
+import Strawberry from '../../assets/pictures/strawberry.png'
+import Eggs from '../../assets/pictures/eggs.png'
+import Cabbage from '../../assets/pictures/cabbage.png'
+import Eggplant from '../../assets/pictures/eggplant.png'
+import Shrimp from '../../assets/pictures/shrimp.png'
+import Kiwi from '../../assets/pictures/kiwi.png'
+import Capsicum from '../../assets/pictures/capsicum.png'
+import Broccoli from '../../assets/pictures/broccoli.png'
+import Yogurt from '../../assets/pictures/yogurt.png'
+import ChickenLag from '../../assets/pictures/chicken-leg.png'
+import ChickenBreast from '../../assets/pictures/chicken-breast.png'
+import Kale from '../../assets/pictures/kale.png'
+import Cheese from '../../assets/pictures/cheese.png'
+import CondensedMilk from '../../assets/pictures/condensed-milk.png'
+import Salmon from '../../assets/pictures/salmon.png'
+import Banana from '../../assets/pictures/banana.png'
+import Milk from '../../assets/pictures/milk.png'
+import Pineapple from '../../assets/pictures/pineapple.png'
+import Tofu from '../../assets/pictures/tofu.png'
+import Tilapia from '../../assets/pictures/tilapia.png'
+import SliceCheese from '../../assets/pictures/slice-cheese.png'
+import RicottaCheese from '../../assets/pictures/ricotta-cheese.png'
+import Grapes from '../../assets/pictures/grapes.png'
+import Lettuce from '../../assets/pictures/lettuce.png'
 
 
 const products = [
@@ -97,10 +97,10 @@ const products = [
     },
     {
         id: 11,
-        name: 'Beef',
+        name: 'Chicken Lag',
         price: 8.0,
         category: 'Meat',
-        image: Beef
+        image: ChickenLag
     },
     {
         id: 12,
@@ -202,3 +202,4 @@ const products = [
     },
 ];
 
+  export default products 
