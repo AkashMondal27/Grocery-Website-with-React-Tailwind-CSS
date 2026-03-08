@@ -1,6 +1,7 @@
 import React from 'react'
 import Heading from '../Heading/Heading'
 import { useState } from 'react'
+import ProductList from '../ProdubuctList/ProductList'
 
 const Products = () => {
 
@@ -32,3 +33,5 @@ const Products = () => {
 }
 
 export default Products
+
+
