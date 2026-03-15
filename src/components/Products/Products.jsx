@@ -28,7 +28,7 @@ const Products = () => {
       <div className='max-w-[1250px]  mx-auto px-10 p-20'>
         <Heading highlight="Our" heading="Products" />
         {/* Tabs */}
-        <div className='flex gap-3 justify-center mt-5'>
+        <div className='flex flex-wrap gap-3 justify-center mt-5'>
           {catagories.map(catagory => {
             return (
               <button key={catagory} className={` px-5 py2 text-lg rounded-lg cursor-pointer
@@ -42,7 +42,7 @@ const Products = () => {
         </div>
 
         {/* product listing  */}
-        <div className='grid grid-cols-4 gap-9 mt-10'>
+        <div className='grid  grid-cols-1 md:grid-cols-4 gap-9 mt-10'>
           {renderCards}
         </div>
 
