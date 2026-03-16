@@ -35,7 +35,7 @@ const Navbar = () => {
 
                 <a href='# ' className='text-3xl font-bold'>
                     {/* Logo */}
-                    Gr<span className='text-orange-500 '>O</span>cify
+                    <span className='text-orange-500 '>G</span>rocy<span className='text-orange-500 '>N</span>est
                 </a>
                 {/* navbar links/ Desktop menu */}
                 <ul className='md:flex items-center gap-x-15 hidden'>
