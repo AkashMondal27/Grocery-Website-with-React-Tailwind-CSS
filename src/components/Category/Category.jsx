@@ -1,41 +1,46 @@
 import React from 'react'
 import Heading from '../Heading/Heading'
-import Button from '../Button/Button'
 import FruitsVeggies from '../../assets/pictures/fruits-and-veggies.png'
 import DairyEggs from '../../assets/pictures/dairy-and-eggs.png'
 import MeatSeaFood from '../../assets/pictures/meat-and-seaFood.png'
+import { Link } from 'react-router-dom'
+
 
 const Category = () => {
 
 
-  const renderCard = category.map((card=>{
-    return(
- 
-      <div className='w-full'  key={card.id}> 
+  const renderCard = category.map((card => {
+    return (
+
+      <div className='w-full' key={card.id}>
 
         <div className=' w-full min-h-[30vh] relative  -mb-10'>
-          <img src= {card.image} className='absolute bottom-0' />
+          <img src={card.image} className='absolute bottom-0' />
         </div>
 
 
         <div className='bg-red-100 pt-10 p-5 rounded-xl'>
           <h3 className='text-zinc-800 text-2xl font-bold'>{card.title}</h3>
           <p className='text-zinc-600 mt-2 mb-4'> {card.description}</p>
-          <Button content= "See All" />
+          <Link to="/fruits" className='bg-gradient-to-b from-orange-400 to-orange-500 text-white
+                   text-md  px-8 py-3 rounded-lg hover:scale-105
+                  hover:to-orange-600 transition-all duration-300 cursor-pointer'>
+            Explore Now
+          </Link>
         </div>
       </div>
     )
   }))
- 
+
   return (
     <section>
       <div className='py-20 max-w-[1250px] mx-auto px-10'>
         <Heading highlight=" Product" heading=" Catagory" />
 
-         
-        
+
+
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10'>
-           {renderCard}
+          {renderCard}
         </div>
       </div>
     </section>
