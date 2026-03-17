@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Fruits from './components/Fruits/Fruits'
 import Dairy from './components/Dairy/Dairy'
 import SeaFood from './components/SeaFood/SeaFood'
+import ViewAll from './components/ViewAll/ViewAll'
 
 
 
@@ -25,7 +26,11 @@ function App() {
     {
       path: "/seafood",
       element: <SeaFood />
-    }
+    },
+    {
+      path: "/viewall",
+      element: <ViewAll />
+      }
   ])
 
   return <RouterProvider router={router} />
