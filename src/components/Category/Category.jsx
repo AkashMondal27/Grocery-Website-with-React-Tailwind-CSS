@@ -34,7 +34,7 @@ const Category = () => {
 
   return (
     <section>
-      <div className='py-20 max-w-[1250px] mx-auto px-10'>
+      <div className='py-20 max-w-[1250px] mx-auto px-10 mt-[5vh]'>
         <Heading highlight=" Product" heading=" Catagory" />
 
 

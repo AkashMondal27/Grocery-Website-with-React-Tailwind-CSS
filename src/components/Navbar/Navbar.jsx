@@ -4,6 +4,7 @@ import { RiShoppingBag4Fill } from "react-icons/ri";
 import { IoSearch } from "react-icons/io5";
 import { TbMenu2 } from "react-icons/tb";
 import { IoCloseSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -29,27 +30,33 @@ const Navbar = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, [])
+
+
+    const closeMenu = () => {
+        setShowMenu(false);
+    }
+
     return (
         <header className={`bg-white fixed top-0 right-0 left-0 z-50 transition-all duration-300  ${isScroll ? 'drop-shadow-[0_8px_25px_rgba(249,115,22,0.15)]' : ""}`}>
             <nav className='max-w-[1250px] mx-auto px-10 md:h-[14vh] h-[12vh] flex justify-between items-center   '>
 
-                <a href='# ' className='text-3xl font-bold'>
+                <Link to='/' className=' text-xl md:text-3xl font-bold'>
                     {/* Logo */}
                     <span className='text-orange-500 '>G</span>rocy<span className='text-orange-500 '>N</span>est
-                </a>
+                </Link>
                 {/* navbar links/ Desktop menu */}
                 <ul className='md:flex items-center gap-x-15 hidden'>
                     <li>
-                        <a href='#' className='font-semibold  tracking-wider text-orange-500'> Home</a>
+                        <Link to='/' className='font-semibold  tracking-wider text-orange-500'> Home</Link>
                     </li>
                     <li>
-                        <a href='#' className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500 ' > About </a>
+                        <Link to='/category' className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500 ' > Catagory</Link>
                     </li>
                     <li>
-                        <a href='#' className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500 '> Process</a>
+                        <Link to='/discount' className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500 '> Discount</Link>
                     </li>
                     <li>
-                        <a href='#' className='font-semibold tracking-wider text-orange-500  text-zinc-800  hover:text-orange-500'> Contact</a>
+                        <Link to='/reviews' className='font-semibold tracking-wider text-orange-500  text-zinc-800  hover:text-orange-500'> Reviews</Link>
                     </li>
                 </ul>
 
@@ -68,34 +75,34 @@ const Navbar = () => {
                         </button>
                     </div>
 
-                    <a href='# ' className='text-zinc-800 text-2xl'>
+                    <Link to='#' className='text-zinc-800 text-2xl'>
                         <FaRegHeart />
-                    </a>
+                    </Link>
 
-                    <a href='# ' className='text-zinc-800 text-2xl'>
+                    <Link to='#' className='text-zinc-800 text-2xl'>
                         <RiShoppingBag4Fill />
-                    </a>
+                    </Link>
 
                     {/* hambargar */}
-                    <a href='#' className='text-zinc-800 text-3xl md:hidden  ' onClick={toggleMenu}>
+                    <Link to='#' className='text-zinc-800 text-3xl md:hidden  ' onClick={toggleMenu}>
                         {showMenu ? <IoCloseSharp /> : <TbMenu2 />}
-                    </a>
+                    </Link>
 
                 </div>
 
                 {/* Mobile Menu */}
                 <ul className={`flex flex-col gap-y-10 bg-orange-500/30 backdrop-blur-xl shadow-2xl rounded-xl p-10 items-center gap-x-15 md:hidden absolute top-30 -right-full transform translate-x-1/2  transition-all duration-500 ${showMenu ? 'right-1/2' : ""}`}>
                     <li>
-                        <a href='#' className='font-semibold  tracking-wider text-orange-500'> Home</a>
+                        <Link to='/' onClick={closeMenu} className='font-semibold  tracking-wider text-orange-500'> Home</Link  >
                     </li>
                     <li>
-                        <a href='#' className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500 ' > About </a>
+                        <Link to='/category' onClick={closeMenu} className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500 ' > Catagory</Link>
                     </li>
                     <li>
-                        <a href='#' className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500 '> Process</a>
+                        <Link to='/discount' onClick={closeMenu} className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500 '> Discount</Link>
                     </li>
                     <li>
-                        <a href='#' className='font-semibold tracking-wider text-orange-500  text-zinc-800  hover:text-orange-500'> Contact</a>
+                        <Link to='/reviews' onClick={closeMenu} className='font-semibold tracking-wider text-orange-500  text-zinc-800  hover:text-orange-500'> Reviews</Link>
                     </li>
 
                     <li className=' flex  p-1 border-2 border-orange-500 rounded-full  md:hidden'>

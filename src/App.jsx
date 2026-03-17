@@ -6,6 +6,9 @@ import Dairy from './components/Dairy/Dairy'
 import SeaFood from './components/SeaFood/SeaFood'
 import ViewAll from './components/ViewAll/ViewAll'
 import LayOut from './components/LayOut/LayOut'
+import Category from './components/Category/Category'
+import Discount from './components/Discount/Discount'
+import Testimonials from './components/Testimonials/Testimonials'
 
 
 
@@ -36,7 +39,21 @@ function App() {
         {
           path: "/viewall",
           element: <ViewAll />
+        },
+        {
+          path:"/category",
+          element :<Category />
+        },
+        {
+          path:"/discount",
+          element :<Discount />
+        },
+        {
+          path:"/reviews",
+          element :<Testimonials />
+
         }
+
       ]
     },
 

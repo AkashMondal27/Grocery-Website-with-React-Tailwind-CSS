@@ -4,7 +4,7 @@ import FreshFruits from '../../assets/pictures/fresh-fruits.png'
 
 const Discount = () => {
   return (
-    <section className='bg-zinc-100  bg-no-repeat bg-right  bg-contain' style={{backgroundImage: `url(${FreshFruits})`}}>
+    <section className='bg-zinc-100  bg-no-repeat bg-right  bg-contain mt-[15vh]' style={{backgroundImage: `url(${FreshFruits})`}}>
         <div className=' md:bd-transparent  flex md:flex-row flex-col max-w-[1250px] mx-auto px-10 py-10'>
             <span className='md:text-9xl text-6xl text-5xl text-orange-500 font-bold transform md:-rotate-90  h-fit md:self-center '> 20%</span>
             <div className='max-w-[700px]'>
