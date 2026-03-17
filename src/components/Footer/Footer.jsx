@@ -81,7 +81,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-zinc-700 mt-10 pt-6 text-center text-orange-500">
-          © 2026 Grocify. All Rights Reserved. Designed by Akash Mondal
+          © 2026 GrocyNest. All Rights Reserved. Designed by Akash Mondal
         </div>
 
       </div>
