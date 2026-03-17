@@ -4,7 +4,7 @@ import { RiShoppingBag4Fill } from "react-icons/ri";
 import { IoSearch } from "react-icons/io5";
 import { TbMenu2 } from "react-icons/tb";
 import { IoCloseSharp } from "react-icons/io5";
-import { Link } from 'react-router-dom';
+import { Link ,NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -47,16 +47,16 @@ const Navbar = () => {
                 {/* navbar links/ Desktop menu */}
                 <ul className='md:flex items-center gap-x-15 hidden'>
                     <li>
-                        <Link to='/' className='font-semibold  tracking-wider text-orange-500'> Home</Link>
+                        <NavLink to='/' className={({ isActive }) => isActive ? 'font-semibold  tracking-wider text-orange-500' : 'font-semibold tracking-wider text-zinc-800  hover:text-orange-500'}> Home</NavLink>
                     </li>
                     <li>
-                        <Link to='/category' className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500 ' > Catagory</Link>
+                        <NavLink to='/category' className={({ isActive }) => isActive ? 'font-semibold  tracking-wider text-orange-500' : 'font-semibold tracking-wider text-zinc-800  hover:text-orange-500'}> Catagory</NavLink>
                     </li>
                     <li>
-                        <Link to='/discount' className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500 '> Discount</Link>
+                        <NavLink to='/discount' className={({ isActive }) => isActive ? 'font-semibold  tracking-wider text-orange-500' : 'font-semibold tracking-wider text-zinc-800  hover:text-orange-500'}> Discount</NavLink>
                     </li>
                     <li>
-                        <Link to='/reviews' className='font-semibold tracking-wider text-orange-500  text-zinc-800  hover:text-orange-500'> Reviews</Link>
+                        <NavLink to='/reviews' className={({ isActive }) => isActive ? 'font-semibold  tracking-wider text-orange-500' : 'font-semibold tracking-wider text-zinc-800  hover:text-orange-500'}> Reviews</NavLink>
                     </li>
                 </ul>
 
@@ -93,16 +93,16 @@ const Navbar = () => {
                 {/* Mobile Menu */}
                 <ul className={`flex flex-col gap-y-10 bg-orange-500/30 backdrop-blur-xl shadow-2xl rounded-xl p-10 items-center gap-x-15 md:hidden absolute top-30 -right-full transform translate-x-1/2  transition-all duration-500 ${showMenu ? 'right-1/2' : ""}`}>
                     <li>
-                        <Link to='/' onClick={closeMenu} className='font-semibold  tracking-wider text-orange-500'> Home</Link  >
+                        <NavLink to='/' onClick={closeMenu} className={({ isActive }) => isActive ? 'font-semibold  tracking-wider text-orange-500' : 'font-semibold tracking-wider text-zinc-800  hover:text-orange-500'}> Home</NavLink>
                     </li>
                     <li>
-                        <Link to='/category' onClick={closeMenu} className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500 ' > Catagory</Link>
+                        <NavLink to='/category' onClick={closeMenu} className={({ isActive }) => isActive ? 'font-semibold  tracking-wider text-orange-500' : 'font-semibold tracking-wider text-zinc-800  hover:text-orange-500'}> Category</NavLink>
                     </li>
                     <li>
-                        <Link to='/discount' onClick={closeMenu} className='font-semibold tracking-wider text-zinc-800  hover:text-orange-500 '> Discount</Link>
+                        <NavLink to='/discount' onClick={closeMenu} className={({ isActive }) => isActive ? 'font-semibold  tracking-wider text-orange-500' : 'font-semibold tracking-wider text-zinc-800  hover:text-orange-500'}> Discount</NavLink>
                     </li>
                     <li>
-                        <Link to='/reviews' onClick={closeMenu} className='font-semibold tracking-wider text-orange-500  text-zinc-800  hover:text-orange-500'> Reviews</Link>
+                        <NavLink to='/reviews' onClick={closeMenu} className={({ isActive }) => isActive ? 'font-semibold  tracking-wider text-orange-500' : 'font-semibold tracking-wider text-zinc-800  hover:text-orange-500'}> Reviews</NavLink>
                     </li>
 
                     <li className=' flex  p-1 border-2 border-orange-500 rounded-full  md:hidden'>
