@@ -5,6 +5,8 @@ import Fruits from './components/Fruits/Fruits'
 import Dairy from './components/Dairy/Dairy'
 import SeaFood from './components/SeaFood/SeaFood'
 import ViewAll from './components/ViewAll/ViewAll'
+import LayOut from './components/LayOut/LayOut'
+
 
 
 
@@ -13,24 +15,31 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />
+      element: <LayOut />,
+      children: [
+        {
+          path: "/",
+          element: <Home />
+        },
+        {
+          path: "/fruits",
+          element: <Fruits />
+        },
+        {
+          path: "/dairy",
+          element: <Dairy />
+        },
+        {
+          path: "/seafood",
+          element: <SeaFood />
+        },
+        {
+          path: "/viewall",
+          element: <ViewAll />
+        }
+      ]
     },
-    {
-      path: "/fruits",
-      element: <Fruits />
-    },
-    {
-      path: "/dairy",
-      element: <Dairy />
-    },
-    {
-      path: "/seafood",
-      element: <SeaFood />
-    },
-    {
-      path: "/viewall",
-      element: <ViewAll />
-      }
+
   ])
 
   return <RouterProvider router={router} />
