@@ -1,9 +1,8 @@
-# 🛒 GrocyNest – Modern Grocery Website
+🛒 Grocery Website (React + Tailwind Practice Project)
 
-GrocyNest is a **modern responsive grocery website** built using **React.js, Vite, and Tailwind CSS**.
-The website displays grocery products such as **fruits, vegetables, dairy products, and seafood** with a clean UI and smooth user experience.
+This project is a frontend grocery website built for practice and learning purposes using React.js and Tailwind CSS.
 
-This project focuses on **component-based architecture**, **responsive design**, and **modern frontend development practices**.
+The main goal of this project is to practice modern React development, component-based architecture, and responsive UI design with Tailwind CSS.
 
 ---
 
@@ -69,7 +68,7 @@ src
 ### 1️⃣ Clone the repository
 
 ```
-git clone https://github.com/your-username/grocery-website.git
+git clone https://github.com/AkashMondal27/Grocery-Website-with-React-Tailwind-CSS
 ```
 
 ### 2️⃣ Go to project directory
