@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Products = () => {
 
-  const catagories = ['All', 'Fruits', 'Vegetables', 'Dairy', 'SeaFood']
+  const catagories = ['All', 'Fruits', 'Vegetables', 'Dairy', 'SeaFood','Meat']
 
   const [activeTab, setActiveTab] = useState('All');
 
