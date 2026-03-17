@@ -16,6 +16,10 @@ function App() {
       path: "/fruits",
       element: <Fruits />
     },
+    {
+      path: "/dairy",
+      element: <Dairy />
+    }
   ])
 
   return <RouterProvider router={router} />
