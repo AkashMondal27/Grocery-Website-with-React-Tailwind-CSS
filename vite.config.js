@@ -5,6 +5,8 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss(),],
-  base: '/Grocery-Website-with-React-Tailwind-CSS/'
-  
+  base: process.env.NODE_ENV === "production"
+    ? "/Grocery-Website-with-React-Tailwind-CSS/"
+    : "/"
+
 })
