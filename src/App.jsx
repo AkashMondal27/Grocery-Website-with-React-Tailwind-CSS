@@ -1,6 +1,6 @@
 import React from 'react'
 import Home from './components/Home/Home'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+// import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Fruits from './components/Fruits/Fruits'
 import Dairy from './components/Dairy/Dairy'
 import SeaFood from './components/SeaFood/SeaFood'
@@ -11,7 +11,7 @@ import Discount from './components/Discount/Discount'
 import Testimonials from './components/Testimonials/Testimonials'
 
 
-
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 
 function App() {
 
