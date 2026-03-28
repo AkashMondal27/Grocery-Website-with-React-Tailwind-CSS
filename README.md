@@ -1,4 +1,4 @@
-🛒 Grocery Website (React + Tailwind Practice Project)
+🛒  GrocyNest :   Grocery Website (React + Tailwind Practice Project)
 
 This project is a frontend grocery website built for practice and learning purposes using React.js and Tailwind CSS.
 
