@@ -2,7 +2,7 @@ import React from 'react'
 import Heading from '../Heading/Heading'
 import FruitsVeggies from '../../assets/pictures/fruits-and-veggies.png'
 import DairyEggs from '../../assets/pictures/dairy-and-eggs.png'
-import MeatSeaFood from '../../assets/pictures/meat-and-seaFood.png'
+import MeatSeaFood from '../../assets/pictures/meat-and-seafood.png'
 import { Link } from 'react-router-dom'
 
 
